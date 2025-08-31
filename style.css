@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f2f4f7;
+    background-color: rgb(221, 235, 246);
     height: 100vh;
     position: relative;
 }
@@ -19,9 +19,11 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top:5px ;
+    transform: translate(-50%,-50%);
+    padding-top: 5px;
+
 }
+
 div{
     text-align: center;
 }
@@ -31,15 +33,15 @@ div{
     padding: 15px;
     position: relative;
     box-sizing: border-box;
-    
 }
+
 .inputField label{
     position: absolute;
     top: 50%;
     left: 22px;
     transform: translateY(-50%);
-    font-size: 16px;
 }
+
 input{
     width: 95%;
     margin: 5px;
@@ -47,39 +49,46 @@ input{
     padding: 5px;
     font-size: 16px;
     border-radius: 5px;
-    box-sizing: border-box; 
-    /*Here you explain all the importance of border-box*/
+    box-sizing: border-box;
 }
+
 input[type='submit']{
     height: 36px;
     border: 1px solid black;
     background-color: #1b6ef3;
-    color:  white;
+    color: white;
     font-size: 18px;
-    padding-bottom: 5px;
     font-weight: bold;
+}
+
+input[type='submit']:hover{
+    cursor: pointer;
+    background-color: #0e64ef;
 }
 
 .submit{
     padding: 5px;
-    
     height: 60px;
     padding: 15px;
 }
-
 
 .forget{
     font-size: 18px;
     padding-bottom: 5px;
-    border-bottom: 1px solid grey ;
+    border-bottom: 1px solid grey;
     margin: 10px;
     color: #1b6ef3;
 }
 
+.forget:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .sign_up{
     height: 60px;
-    padding: 15px;
-    margin-bottom:10px ;
+    width: 95%;
+    margin: 5px;
 }
 
 button{
@@ -87,48 +96,35 @@ button{
     height: 36px;
     margin: 5px;
     font-size: 18px;
-    border-radius: 6px; ;
+    border-radius: 6px;
     border: 1px solid black;
     background-color: #00A400;
-    color:  white;
+    color: white;
     font-weight: bold;
-}
 
-/* explain that while clicking on label it is not opening */
-.inputField label{ 
-    pointer-events: none ;
+}
+button:hover{
+    background-color: #058c05;
+    cursor: pointer;
 }
 
 .inputField input{
     border: 0;
     border-bottom: 1px solid black;
-
-    /* explain by clicking on the field */
     outline: 0;
     border-radius: 0;
 }
 
-input[type='submit']:hover{
-    background-color: #0e62e8;
-    cursor: pointer;
-}
-
-.forget:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #029702;
-    cursor: pointer;
-}
-
 .inputField input:focus + label,
 .inputField input:not(:placeholder-shown) + label{
+
     font-size: 12px;
     top: 6px;
     color: #1b6ef3;
+
 }
 
 .inputField label{
+    pointer-events: none;
     transition: 0.3s ease-in-out;
 }

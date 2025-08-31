@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
+  <title>Login Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="formBody">
-    <form action="">
+    <div class="formBody">
+      <form action="">
+        <div class="inputField">
+          <input type="email" placeholder="">
+          <label>UserName or Email</label>
+        </div>
+         
+        <div class="inputField">
+          <input type="password" placeholder="">
+          <label>Password</label>
+        </div>
 
-      <div class="inputField">
-        <input type="text" placeholder=" ">
-        <label>User</label>
-      </div>
+        <div class="submit">
+          <input type="submit" value="Log In">
+        </div>
 
-      <div class="inputField">
-        <input type="password" placeholder=" ">
-        <label>Password</label>
-      </div>
-      <div class="submit">
-        <input type="submit" value="Log in">
-      </div>
-      <div class="forget">Forget Password?</div>
-      <div class="sign_up">
-        <button>Create new Account</button>
-      </div>
-   
-    </form>
-  </div>
-  
+        <div class="forget">
+          Forget Password?
+        </div>
+
+        <div class="sign_up">
+          <button>Create New Account</button>
+        </div>
+
+      </form>
+
+    </div>
+
 </body>
 </html>
